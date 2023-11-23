@@ -144,6 +144,7 @@
     width: 60px;
     height: 20px;
 }
+
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
@@ -151,4 +152,38 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+.ex-12-top-white,
+.ex-12-bottom-white {
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.ex-12-top-white {
+    animation-name: move-right;
+}
+
+.ex-12-bottom-white {
+    animation-name: move-left;
+}
+
+@keyframes move-right {
+    50% {
+        left: 60%;
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+@keyframes move-left {
+    50% {
+        right: 50%;
+    }
+    100% {
+        right: 20%;
+    }
 }
