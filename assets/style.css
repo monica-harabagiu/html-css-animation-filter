@@ -73,10 +73,24 @@
     transition: filter 2s ease;
 }
 
+.ex-8-img:hover {
+    filter: drop-shadow(0 0 15px violet) contrast(150%);
+    border-radius: 10px;
+    transition: all 2s ease;
+}
+
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: all 2s ease;
 }
+
+.ex-9-img:hover {
+    filter: sepia(50%) opacity(20%);
+    scale: 20%;
+    border-radius: 20px;
+}
+
 .ex-10-icon {
     font-size: 60px;
 }
